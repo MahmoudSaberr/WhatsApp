@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/settings_tool_bar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profile_iv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/purple_500"
+       />
+
+    <EditText
+        android:id="@+id/settings_username_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_profile_iv"
+        android:inputType="textMultiLine"
+        android:hint="username"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:background="@drawable/inputs"
+        android:gravity="center"
+        android:drawableStart="@drawable/edit_profile"
+        android:drawableLeft="@drawable/edit_profile"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        />
+
+    <EditText
+        android:id="@+id/settings_status_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_username_et"
+        android:inputType="textMultiLine"
+        android:hint="hey, i am available now."
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:background="@drawable/inputs"
+        android:gravity="center"
+        android:drawableStart="@drawable/edit_status"
+        android:drawableLeft="@drawable/edit_status"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        />
+
+    <Button
+        android:id="@+id/settings_update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_status_et"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"
+        android:gravity="center"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        />
+
+
+</RelativeLayout>

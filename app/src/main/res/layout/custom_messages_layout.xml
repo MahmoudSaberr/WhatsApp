@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_message_profile_civ"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile_image"/>
+
+    <TextView
+        android:id="@+id/custom_receiver_message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/custom_message_profile_civ"
+        android:layout_toRightOf="@+id/custom_message_profile_civ"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Receiver Messages"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:background="@drawable/receiver_messages_layout"/>
+
+    <ImageView
+        android:id="@+id/custom_message_sender_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/custom_message_receiver_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toEndOf="@+id/custom_message_profile_civ"
+        android:layout_toRightOf="@+id/custom_message_profile_civ"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/custom_sender_message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="@+id/custom_receiver_message_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Sender Messages"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:background="@drawable/sender_messages_layout"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_activity"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_visit_profile_iv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/purple_500"
+        />
+
+    <TextView
+        android:id="@+id/profile_username_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_visit_profile_iv"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="5dp"
+        android:text="username"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/profile_status_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_username_tv"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="25dp"
+        android:text="Hey, I Love Coding (Chat App)..."
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/profile_send_message_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_status_tv"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="56dp"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/buttons"
+        android:text="Send Message"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/profile_cancel_message_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_send_message_btn"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="56dp"
+        android:textColor="@android:color/background_light"
+        android:background="@color/dark_red"
+        android:text="Cancel Chat Request"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
